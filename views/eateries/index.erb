@@ -14,20 +14,13 @@
     <% end %>
   </div>
 
-  <table class="display-table">
-    <tr>
-      <th>Eatery name:</th>
-      <th>Location: </th>
-      <th>Eatery details:</th>
-    </tr>
-
     <% @eateries.each do |eatery| %>
-    <tr>
-      <td> <%= eatery.name%> </td>
-      <td> <%= eatery.location%> </td>
-      <td> <a href="/eateries/<%= eatery.id %>">Eatery Details</a></td>
-    </tr>
+    <div class="eatery-container">
+       <div class="eatery-details"> <span class="eatery-header-text"> Eatery name: </span> <%= eatery.name%></div>
+      <div class="eatery-details">  <span class="eatery-header-text">Location: </span><%= eatery.location%> </div>
+      <div class="eatery-details"> <span class="eatery-header-text">Eatery details:</span> <a href="/eateries/<%= eatery.id %>">Eatery Details</a></div>
+    </div>
   <% end %>
-</table>
+
 
 </div>
