@@ -3,6 +3,9 @@
 
   <p>Name: <%= @eatery.name %></p>
   <p>Location: <%= @eatery.location %></p>
+  <div class="map">
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @eatery.location %>&size=500x400&zoom=17&markers=color:red%7C<%= @eatery.location%>&key=AIzaSyAbTalknSayXUPh84noLdAJrGvWCZwGocw" alt="">
+  </div>
   <div class="buttons-container">
     <div class="inline-button">
       <a href="/eateries/<%= @eatery.id %>/edit" class="button">Edit eatery</a>
@@ -14,3 +17,5 @@
     </div>
   </div>
 </div>
+API key
+<!-- AIzaSyAbTalknSayXUPh84noLdAJrGvWCZwGocw -->

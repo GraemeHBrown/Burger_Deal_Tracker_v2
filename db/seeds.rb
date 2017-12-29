@@ -11,16 +11,16 @@ Deal.delete_all()
 BurgerDeal.delete_all()
 
 ###Eateries
-bobs_burgers = Eatery.new({'name' => 'Bobs Burgers', 'location' => 'Edinburgh'})
+bobs_burgers = Eatery.new({'name' => 'Bobs Burgers', 'location' => 'Ocean Terminal, Edinburgh, EH6 6JJ'})
 bobs_burgers.save()
 
-burgers_r_us = Eatery.new({'name' => 'Burgers R Us', 'location' => 'Edinburgh'})
+burgers_r_us = Eatery.new({'name' => 'Burgers R Us', 'location' => '137 George Street, Edinburgh, EH2 4JY'})
 burgers_r_us.save()
 
-burger_meats_burger = Eatery.new({'name' => 'Burger Meats Burger', 'location' => 'Edinburgh'})
+burger_meats_burger = Eatery.new({'name' => 'Burger Meats Burger', 'location' => '92 Lothian Road, Edinburgh, EH3 9BE'})
 burger_meats_burger.save()
 
-mcdonalds = Eatery.new({'name' => 'McDonalds', 'location' => 'Edinburgh'})
+mcdonalds = Eatery.new({'name' => 'McDonalds', 'location' => '137 Princes Street, Edinburgh, EH2 4BL'})
 mcdonalds.save()
 
 ###Burgers data
